@@ -1,0 +1,2 @@
+#!/bin
+which git
