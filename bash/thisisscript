@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "this is a script too! Or, maybe it's a binary?"
+# remove the `.sh` if it's meant to be global (i.e. in the bin directory)
