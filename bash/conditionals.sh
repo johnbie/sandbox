@@ -19,3 +19,9 @@ file = "./hello"
 [[ -r $file ]]
 [[ -w $file ]]
 [[ -x $file ]]
+
+# combined
+[[ $num -ne 1 -a $num -ne 2 ]] # internal AND
+[[ $num -ne 1 -o $num -ne 2 ]] # internal OR
+[[ $num -ne 1 ]] && [[ $num -ne 2 ]] # external AND
+[[ $num -ne 1 ]] || [[ $num -ne 2 ]] # external OR
