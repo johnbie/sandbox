@@ -1,9 +1,13 @@
-const expres = require('express');
+const express = require('express');
 const app = express();
 const port = 3000;
 
 // json middleware
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
 app.post('/api/endpoint', async (req, res) => {
     const payload = req.body;
@@ -55,5 +59,5 @@ function someAsyncOperationWithParams(param) {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server started on port {port}`);
+    console.log(`Server started on port ${port}`);
 });
