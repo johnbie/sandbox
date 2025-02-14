@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/johnbie/node-sandbox/issues"
   },
-  "homepage": "https://github.com/johnbie/node-sandbox#readme"
+  "homepage": "https://github.com/johnbie/node-sandbox#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
