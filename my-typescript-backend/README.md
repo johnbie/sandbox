@@ -66,9 +66,9 @@ Running via Docker Compose:
 docker-compose up -d
 
 # stop and kill
-docker-compose stop
+docker-compose down
 
 # stop and kill, but longer
-docker-compose down
+docker-compose stop
 docker-compose rm -v
 ```
