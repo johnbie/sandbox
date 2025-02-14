@@ -1,0 +1,22 @@
+{
+  "name": "my-first-express-project",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnbie/node-sandbox.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Jangwon Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnbie/node-sandbox/issues"
+  },
+  "homepage": "https://github.com/johnbie/node-sandbox#readme"
+}
