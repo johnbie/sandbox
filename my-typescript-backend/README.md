@@ -51,11 +51,24 @@ The scripts section:
 
 Running Docker:
 ```bash
+# build and start
 docker build -t my-typescript-app .
-docker run -d -p 3000:3000 my-typescript-app
+docker run -d -p 3000:3000 --name my_typescript_app my-typescript-app
+
+# stop and kill
+docker stop my_typescript_app
+docker rm -f my_typescript_app
 ```
 
 Running via Docker Compose:
 ```bash
+# start
 docker-compose up -d
+
+# stop and kill
+docker-compose stop
+
+# stop and kill, but longer
+docker-compose down
+docker-compose rm -v
 ```
