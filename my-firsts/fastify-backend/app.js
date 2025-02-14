@@ -55,14 +55,27 @@ fastify.delete('/items/:id', async (request, reply) => {
   return deletedItem;
 });
 
+
+// Helper function to simulate an asynchronous operation with a delay
+const simulateAsyncOperation = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve();
+    }, 1000); // Simulated delay of 1 second
+  });
+};
+
+
 // Standalone GET endpoint
 fastify.get('/standalone', async (request, reply) => {
-  return { message: 'This is a standalone GET endpoint' };
+  await simulateAsyncOperation();
+  return { message: 'This is a standalone GET endpoint with asynchronous operation' };
 });
 
 // Standalone POST endpoint
 fastify.post('/standalone', async (request, reply) => {
-  return { message: 'This is a standalone POST endpoint' };
+  await simulateAsyncOperation();
+  return { message: 'This is a standalone POST endpoint with asynchronous operation' };
 });
 
 // Standalone PUT endpoint
