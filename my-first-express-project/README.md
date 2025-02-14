@@ -8,4 +8,6 @@ Commands used:
 npm init -y
 npm install express
 node app.js
+npm install -g nodemon
+nodemon app.js
 ```
