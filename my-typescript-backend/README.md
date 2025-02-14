@@ -50,7 +50,12 @@ The scripts section:
 ```
 
 Running Docker:
-```
+```bash
 docker build -t my-typescript-app .
 docker run -d -p 3000:3000 my-typescript-app
+```
+
+Running via Docker Compose:
+```bash
+docker-compose up -d
 ```
