@@ -1,0 +1,24 @@
+{
+  "name": "my-first-openai-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnbie/node-sandbox.git"
+  },
+  "author": "Jangwon Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnbie/node-sandbox/issues"
+  },
+  "homepage": "https://github.com/johnbie/node-sandbox#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.47.2"
+  }
+}
