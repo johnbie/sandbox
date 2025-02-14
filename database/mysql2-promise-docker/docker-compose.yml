@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mydb
+    volumes:
+      - db_data:/var/lib/mysql
+  node:
+    build: ./node-app
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+volumes:
+  db_data:
