@@ -49,3 +49,8 @@ The scripts section:
 }
 ```
 
+Running Docker:
+```
+docker build -t my-typescript-app .
+docker run -d -p 3000:3000 my-typescript-app
+```
