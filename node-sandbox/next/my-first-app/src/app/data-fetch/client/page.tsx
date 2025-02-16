@@ -2,7 +2,8 @@
  
 import { useState, useEffect } from 'react'
  
-export default function Posts() {
+// http://localhost:3000/data-fetch/client
+export default function Health() {
   const [data, setData] = useState(null)
  
   useEffect(() => {
